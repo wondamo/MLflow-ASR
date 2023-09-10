@@ -1,0 +1,8 @@
+transformers
+datasets
+evaluate
+jiwer
+mlflow
+librosa
+tensorflow
+torch

@@ -1,0 +1,8 @@
+name: Speech to text
+
+docker_env:
+    image: mlflow-asr
+
+entry_points:
+    main:
+        command: "python train.py"
