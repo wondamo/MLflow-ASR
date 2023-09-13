@@ -13,7 +13,6 @@ import os
 os.environ["MLFLOW_EXPERIMENT_NAME"] = "speechnotetaking-asr"
 os.environ["MLFLOW_FLATTEN_PARAMS"] = "1"
 
-print(experiment.artifact_location)
 model_checkpoint = "facebook/wav2vec2-base"
 
 tedlium = load_dataset("LIUM/tedlium", "release1", split="train[:100]")
