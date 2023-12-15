@@ -11,9 +11,10 @@ import os
 
 
 os.environ["MLFLOW_EXPERIMENT_NAME"] = "speechnotetaking-asr"
-os.environ["MLFLOW_FLATTEN_PARAMS"] = "1"
+os.environ["MLFLOW_S3_ENDPOINT_URL"] = "s3://mlflow-dba"
+os.environ["MLFLOW_TRACKING_URI"] = "postgresql+psycopg2://postgres:zTx2e3pn79YMkDKtzttf@database-1.cvsqlcx445xv.us-east-1.rds.amazonaws.com:5432/mlflow_db"
+os.environ["HF_MLFLOW_LOG_ARTIFACTS"] = "1"
 
-print(experiment.artifact_location)
 model_checkpoint = "facebook/wav2vec2-base"
 
 tedlium = load_dataset("LIUM/tedlium", "release1", split="train[:100]")

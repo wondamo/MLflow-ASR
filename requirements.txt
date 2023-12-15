@@ -6,3 +6,4 @@ mlflow
 librosa
 tensorflow
 torch
+pyscopg2
