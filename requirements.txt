@@ -7,3 +7,4 @@ librosa
 tensorflow
 torch
 pyscopg2
+soundfile
